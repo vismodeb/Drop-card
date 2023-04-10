@@ -1,0 +1,108 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.service-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eff0f4;
+}
+.service{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.drop{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05), 25px 35px 20px rgba(0,0,0,0.05), 25px 30px 30px rgba(0,0,0,0.05), inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drop:nth-child(1){
+    border-radius: 67% 33% 15% 85% / 46% 32% 68% 54% ;
+}
+.drop:nth-child(2){
+    border-radius: 17% 83% 58% 42% / 46% 39% 61% 54% ;
+}
+.drop:nth-child(3){
+    border-radius: 31% 69% 41% 59% / 46% 32% 68% 54% ;
+}
+.drop:hover{
+    border-radius: 50%;
+}
+.drop::before {
+    content: '';
+    position: absolute;
+    top: 66px;
+    left: 70px;
+    width: 45px;
+    height: 45px;
+    border-radius: 49% 51% 28% 72% / 41% 43% 57% 59% ;
+    background: #fff;
+}
+.drop::after {
+    content: '';
+    position: absolute;
+    top: 105px;
+    left: 110px;
+    width: 25px;
+    height: 25px;
+    border-radius: 49% 51% 28% 72% / 41% 43% 57% 59% ;
+    background: #fff;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+.title h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1), inset -2px -5px 10px rgba(255,255,255,1), 15px 15px 10px rgba(0,0,0,0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
+    border-radius: 50%;
+    font-size: 30px;
+    color: var(--col);
+}
+.title a {
+    text-decoration: none;
+    font-size: 20px;
+    background: var(--col);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;
+    opacity: 0.75;
+    transition: all 0.5s ease 0s;
+    min-height: 52px;
+    line-height: 47px;
+    padding: 0 25px;
+}
+.title a:hover{
+    opacity: 1;
+}
